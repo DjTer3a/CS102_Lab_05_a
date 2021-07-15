@@ -9,12 +9,13 @@
  * @version 16/07/2021
  */
 
+
 import cs102.IHangmanSetup;
+
 
 public class BasicSetup implements IHangmanSetup
 {
 	private static String[] words = { "Broken", "Magical", "I","JRobo is the best", "amazing","cool", "David", "Incredible" };
-
 
 
 	/**
@@ -35,7 +36,6 @@ public class BasicSetup implements IHangmanSetup
 	}
 
 
-	
 	/**
      * @return empty string
      */

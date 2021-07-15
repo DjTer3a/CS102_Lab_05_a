@@ -9,8 +9,10 @@
  * @version 16/07/2021
  */
 
+
 import java.util.Scanner;
 import cs102.*;
+
 
 public class ConsoleHangman
 {
@@ -59,6 +61,7 @@ public class ConsoleHangman
 		}
 
 		System.out.println( "\nEnd of ConsoleHangman\n" );
+		scan.close();
 	}
 
 } // end of class ConsoleHangman

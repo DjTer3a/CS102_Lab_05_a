@@ -9,7 +9,9 @@
  * @version 16/07/2021
  */
 
+
 import cs102.Hangman;
+
 
 public interface IHangmanView
 {
