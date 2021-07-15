@@ -1,29 +1,37 @@
+/**
+ * Lab_05_a Instructions found on moodle
+ * 
+ * Style guidlines URL:-
+ * http://www.cs.bilkent.edu.tr/~adayanik/cs101/practicalwork/styleguidelines.htm
+ * 
+ * 
+ * @author Mostafa Higazy
+ * @version 16/07/2021
+ */
+
 import java.util.Scanner;
 import cs102.*;
-
-/**
- * ConsoleHangman
- *
- * @author
- * @version 1.00 2013/4/7
- */
 
 public class ConsoleHangman
 {
     public static void main( String[] args)
 	{
 
-		char letter;
-    	Scanner scan = new Scanner( System.in);
-
     	System.out.println( "Start of ConsoleHangman\n");
 
 		// VARIABLES
 		Hangman		hangman;
+		char letter;
+
+
+		Scanner scan = new Scanner( System.in);
+
 
 		// PROGRAM CODE
 		hangman = new Hangman( new BasicSetup() );
 
+
+		//do-while statement to play the game
 		do{
 			System.out.println("Letters known so far :- "+ hangman.getKnownSoFar());
 			System.out.println();
@@ -35,6 +43,8 @@ public class ConsoleHangman
 		}
 		while( !hangman.isGameOver());
 		
+
+		//conditionals displaying the win loss messages
 		if(hangman.hasLost()){
 			System.out.println();
             System.out.println("You have lost. Better luck next time :)");
